@@ -50,6 +50,11 @@ export default function Navbar() {
         </button>
         <ul className={`${styles.navLinks} ${menuOpen ? styles.open : ""}`}>
           <li>
+            <Link href="/sobre" className={styles.navLink}>
+              Sobre nós
+            </Link>
+          </li>
+          <li>
             <Link href="/login" className={styles.navLink}>
               Login
             </Link>
