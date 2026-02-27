@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Title from "@/components/ui/Title";
 import styles from "@/styles/Sobre.module.css";
 
 export default function Sobre() {
@@ -10,14 +11,14 @@ export default function Sobre() {
       </Head>
       <main className={styles.main}>
         <section className={styles.hero}>
-          <h1 className={styles.title}>Sobre nós</h1>
+          <Title variant="h1" className={styles.title}>Sobre nós</Title>
           <p className={styles.subtitle}>
             Conheça a nossa história, missão e os valores que nos guiam.
           </p>
         </section>
 
         <section className={styles.section}>
-          <h2 className={styles.sectionTitle}>Nossa História</h2>
+          <Title variant="h2" className={styles.sectionTitle}>Nossa História</Title>
           <p className={styles.text}>
             Fundada em 2020, a MyApp nasceu da vontade de simplificar a vida das
             pessoas por meio da tecnologia. Desde o início, nosso foco foi criar
@@ -31,7 +32,7 @@ export default function Sobre() {
         </section>
 
         <section className={styles.section}>
-          <h2 className={styles.sectionTitle}>Missão</h2>
+          <Title variant="h2" className={styles.sectionTitle}>Missão</Title>
           <p className={styles.text}>
             Transformar a experiência digital das pessoas oferecendo produtos
             simples, eficientes e seguros que gerem valor real no dia a dia.
@@ -39,7 +40,7 @@ export default function Sobre() {
         </section>
 
         <section className={styles.section}>
-          <h2 className={styles.sectionTitle}>Valores</h2>
+          <Title variant="h2" className={styles.sectionTitle}>Valores</Title>
           <ul className={styles.valuesList}>
             <li className={styles.valueItem}>
               <span className={styles.valueIcon}>🤝</span>
@@ -74,7 +75,7 @@ export default function Sobre() {
         </section>
 
         <section className={styles.section}>
-          <h2 className={styles.sectionTitle}>Nossa Equipe</h2>
+          <Title variant="h2" className={styles.sectionTitle}>Nossa Equipe</Title>
           <div className={styles.teamGrid}>
             {[
               { name: "Ana Lima", role: "CEO & Fundadora" },
