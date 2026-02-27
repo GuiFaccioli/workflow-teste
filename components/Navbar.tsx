@@ -55,6 +55,11 @@ export default function Navbar() {
             </Link>
           </li>
           <li>
+            <Link href="/produtos" className={styles.navLink}>
+              Produtos
+            </Link>
+          </li>
+          <li>
             <Link href="/contato" className={styles.navLink}>
               Contato
             </Link>
