@@ -1,0 +1,50 @@
+// SCSS Variables
+$primary-color: #0070f3;
+$secondary-color: #666;
+$border-radius: 8px;
+$font-size-base: 16px;
+
+// SCSS Mixins
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin responsive($breakpoint) {
+  @if $breakpoint == mobile {
+    @media (max-width: 600px) {
+      @content;
+    }
+  } @else if $breakpoint == tablet {
+    @media (max-width: 1024px) {
+      @content;
+    }
+  }
+}
+
+// Example usage
+.button {
+  @include flex-center;
+  background-color: $primary-color;
+  border-radius: $border-radius;
+  font-size: $font-size-base;
+  padding: 8px 16px;
+  color: #fff;
+  cursor: pointer;
+  transition: opacity 0.2s;
+
+  &:hover {
+    opacity: 0.85;
+  }
+
+  &--secondary {
+    background-color: transparent;
+    color: $secondary-color;
+    border: 1px solid $secondary-color;
+  }
+
+  @include responsive(mobile) {
+    width: 100%;
+  }
+}
