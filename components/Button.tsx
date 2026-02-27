@@ -5,6 +5,8 @@ interface ButtonProps {
   variant?: "primary" | "secondary";
   onClick?: (event: MouseEvent<HTMLButtonElement>) => void;
   className?: string;
+  disabled?: boolean;
+  ariaLabel?: string;
 }
 
 export default function Button({
@@ -12,11 +14,15 @@ export default function Button({
   variant = "primary",
   onClick,
   className,
+  disabled = false,
+  ariaLabel,
 }: ButtonProps) {
   return (
     <button
+      aria-label={ariaLabel ?? label}
       className={className}
       data-variant={variant}
+      disabled={disabled}
       onClick={onClick}
       type="button"
     >
