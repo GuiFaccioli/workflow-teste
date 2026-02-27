@@ -1,6 +1,7 @@
 import { MouseEvent } from "react";
 import Head from "next/head";
 import styles from "@/styles/Home.module.css";
+import Button from "@/components/Button";
 
 export default function Home() {
   function handleClick(event: MouseEvent<HTMLButtonElement>) {
@@ -16,9 +17,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={styles.page}>
-        <button className={styles.welcomeButton} onClick={handleClick}>
-          Bem-vindo
-        </button>
+        <Button
+          label="Bem-vindo"
+          className={styles.welcomeButton}
+          onClick={handleClick}
+        />
       </div>
     </>
   );
