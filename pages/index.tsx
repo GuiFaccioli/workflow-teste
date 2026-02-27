@@ -2,6 +2,8 @@ import { MouseEvent } from "react";
 import Head from "next/head";
 import styles from "@/styles/Home.module.css";
 import Button from "@/components/Button";
+import HeroSection from "@/components/HeroSection";
+import IntroSection from "@/components/IntroSection";
 
 export default function Home() {
   function handleClick(event: MouseEvent<HTMLButtonElement>) {
@@ -16,13 +18,29 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className={styles.page}>
-        <Button
-          label="Bem-vindo"
-          className={styles.welcomeButton}
-          onClick={handleClick}
+      <main>
+        <HeroSection />
+        <IntroSection
+          title="Produto Alpha"
+          description="Descubra o Produto Alpha, pensado para facilitar o seu dia a dia com tecnologia de ponta e design intuitivo. Experimente uma nova forma de produtividade."
+          imageUrl="https://picsum.photos/seed/alpha/480/320"
+          imageAlt="Produto Alpha"
         />
-      </div>
+        <IntroSection
+          title="Produto Beta"
+          description="O Produto Beta foi desenvolvido para quem busca performance e confiabilidade. Soluções inovadoras que se adaptam às suas necessidades."
+          imageUrl="https://picsum.photos/seed/beta/480/320"
+          imageAlt="Produto Beta"
+          reverse
+        />
+        <div className={styles.page}>
+          <Button
+            label="Bem-vindo"
+            className={styles.welcomeButton}
+            onClick={handleClick}
+          />
+        </div>
+      </main>
     </>
   );
 }
