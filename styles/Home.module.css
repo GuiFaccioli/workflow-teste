@@ -3,7 +3,7 @@
   min-height: 100vh;
   align-items: center;
   justify-content: center;
-  background-color: #ffe4e1;
+  background-color: var(--bg-pastel-green, #d1f2eb);
   font-family: system-ui, sans-serif;
 }
 
