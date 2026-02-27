@@ -55,6 +55,11 @@ export default function Navbar() {
             </Link>
           </li>
           <li>
+            <Link href="/contato" className={styles.navLink}>
+              Contato
+            </Link>
+          </li>
+          <li>
             <Link href="/login" className={styles.navLink}>
               Login
             </Link>
