@@ -2,8 +2,8 @@
   position: sticky;
   top: 0;
   z-index: 100;
-  background-color: #ffffff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  background-color: var(--nav-bg-black, #000000);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .container {
@@ -19,7 +19,7 @@
 .brand {
   font-size: 1.25rem;
   font-weight: 700;
-  color: #171717;
+  color: var(--nav-fg-white, #ffffff);
 }
 
 .navLinks {
@@ -30,12 +30,12 @@
 
 .navLink {
   font-size: 0.95rem;
-  color: #171717;
+  color: var(--nav-fg-white, #ffffff);
   transition: color 0.2s;
 }
 
 .navLink:hover {
-  color: #555555;
+  color: #cccccc;
 }
 
 .hamburger {
@@ -54,7 +54,7 @@
   display: block;
   width: 100%;
   height: 2px;
-  background-color: #171717;
+  background-color: var(--nav-fg-white, #ffffff);
   border-radius: 2px;
 }
 
@@ -70,9 +70,9 @@
     top: 60px;
     left: 0;
     right: 0;
-    background-color: #ffffff;
+    background-color: var(--nav-bg-black, #000000);
     padding: 1rem 1.5rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     gap: 1rem;
   }
 
