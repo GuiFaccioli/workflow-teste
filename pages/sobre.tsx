@@ -43,7 +43,7 @@ export default function Sobre() {
           <Title variant="h2" className={styles.sectionTitle}>Valores</Title>
           <ul className={styles.valuesList}>
             <li className={styles.valueItem}>
-              <span className={styles.valueIcon}>🤝</span>
+        
               <div>
                 <strong>Transparência</strong>
                 <p className={styles.valueText}>
@@ -52,7 +52,7 @@ export default function Sobre() {
               </div>
             </li>
             <li className={styles.valueItem}>
-              <span className={styles.valueIcon}>🚀</span>
+             
               <div>
                 <strong>Inovação</strong>
                 <p className={styles.valueText}>
@@ -62,7 +62,7 @@ export default function Sobre() {
               </div>
             </li>
             <li className={styles.valueItem}>
-              <span className={styles.valueIcon}>💡</span>
+            
               <div>
                 <strong>Simplicidade</strong>
                 <p className={styles.valueText}>
@@ -78,10 +78,11 @@ export default function Sobre() {
           <Title variant="h2" className={styles.sectionTitle}>Nossa Equipe</Title>
           <div className={styles.teamGrid}>
             {[
-              { name: "Ana Lima", role: "CEO & Fundadora" },
+              { name: "Cacazinho Mlk Bolado", role: "CEO & Fundadora" },
               { name: "Bruno Costa", role: "CTO" },
               { name: "Carla Souza", role: "Design Lead" },
               { name: "Diego Martins", role: "Engenheiro de Software" },
+              { name: "Guiguizinho codador", role: "Ajudante do estagiário" },
             ].map((member) => (
               <div key={member.name} className={styles.teamCard}>
                 <div className={styles.avatar} aria-hidden="true">
